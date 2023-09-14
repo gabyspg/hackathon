@@ -38,6 +38,10 @@ let funnyPics = [
   'https://hips.hearstapps.com/hmg-prod/images/ai-flaw-memes-1677257023.jpg?crop=0.520xw:0.988xh;0.225xw,0&resize=1200:*',
   'https://i.ytimg.com/vi/if-2M3K1tqk/maxresdefault.jpg',
   'https://media.tenor.com/tTvBVvMFUNEAAAAC/harry-potter-sorcerer-stone.gif',
+  'https://i0.wp.com/boingboing.net/wp-content/uploads/2016/11/bcf.png?fit=680%2C445&ssl=1',
+  'https://media.tenor.com/EnRojaH2AH4AAAAC/confused-meme.gif',
+  'https://media.tenor.com/FE6caXZ5sS0AAAAC/confused-wth.gif',
+  'https://wallpapers-clan.com/wp-content/uploads/2022/08/meme-gif-pfp-18.gif',
 ];
 
 // const cursor = document.getElementById("cursor");
