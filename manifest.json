@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Prank'em!",
+  "description": "random-pranks",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "chipotle.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ],
+  "permissions": ["activeTab", "tabs"]
+}

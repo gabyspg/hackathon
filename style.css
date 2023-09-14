@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+}
+
+h1,
+h2,
+h4 {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 5%;
+}
+
+/* html {
+  cursor: none;
+} */
+
+/* #fly {
+  position: flex;
+  width: 100px;
+  height: 100px;
+} */
+
+/* p {
+    color: white;
+} */
+
+/* changes cursor to image */
+/* #cursor {
+  width: auto;
+  height: 10;
+  background-image: url("chipotle.png");
+  pointer-events: none;
+} */
