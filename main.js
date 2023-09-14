@@ -37,7 +37,6 @@ let funnyPics = [
   'https://akns-images.eonline.com/eol_images/Entire_Site/2013310/rs_1024x759-130410132608-1024.WFerrell.ms.041013.jpg?fit=around%7C776:576&output-quality=90&crop=776:576;center,top',
   'https://hips.hearstapps.com/hmg-prod/images/ai-flaw-memes-1677257023.jpg?crop=0.520xw:0.988xh;0.225xw,0&resize=1200:*',
   'https://i.ytimg.com/vi/if-2M3K1tqk/maxresdefault.jpg',
-  'https://www.si.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg0OTA2NjA1MDczMDE1OTI4/aaron-rodgers.jpg',
   'https://media.tenor.com/tTvBVvMFUNEAAAAC/harry-potter-sorcerer-stone.gif',
 ];
 
@@ -48,14 +47,30 @@ let funnyPics = [
 //   cursor.style.top = `${event.clientY}px`;
 // });
 
-document.addEventListener('scroll', () => {
+let scrollTimeout;
+
+function onScrollStopped() {
   const images = document.getElementsByTagName('img');
   for (let i = 0; i < images.length; i++) {
     const randomImg = Math.floor(Math.random() * funnyPics.length);
     images[i].src = funnyPics[randomImg];
     images[i].srcset = funnyPics[randomImg];
   }
+}
+
+document.addEventListener('scroll', () => {
+  clearTimeout(scrollTimeout); // Clear the previous timeout
+  scrollTimeout = setTimeout(onScrollStopped, 200); // Set a new timeout
 });
+
+// document.addEventListener('scroll', () => {
+//   const images = document.getElementsByTagName('img');
+//   for (let i = 0; i < images.length; i++) {
+//     const randomImg = Math.floor(Math.random() * funnyPics.length);
+//     images[i].src = funnyPics[randomImg];
+//     images[i].srcset = funnyPics[randomImg];
+//   }
+// });
 
 //Effects when hovering over text
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
